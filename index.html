@@ -13,13 +13,13 @@
   </head>
   <body class="body-items">
     <!-- Header -->
-    <header class="header">
+    <header class="header block-sizing">
       <!-- Logo Url -->
       <a href="index.html" class="header__logo links"><span class="header__logo-web">Web</span><span class="header__logo-studio">Studio</span></a>
       <!-- Navigation Menu -->
       <nav class="header__navigation ">
         <ul class="header__nav__menu list">
-          <li class="menu_items"><a class="links" href="index.html">Студія</a></li>
+          <li class="menu_items"><a class="links active" href="index.html">Студія</a></li>
           <li class="menu_items"><a class="links" href="portfolio.html">Портфоліо</a></li>
           <li class="menu_items"><a class="links" href="#">Контакти</a></li>
         </ul>
@@ -48,14 +48,14 @@
     <!-- Main -->
     <main>
       <!-- 1 Block -->
-      <section class="section-order">
+      <section class="section-order block-sizing">
         <div class="secion-order__item">
           <h1 class="secion-order__item__h1">Ефективні рішення для вашого бізнесу</h1>
-          <button class="section_order_btn">Замовити послугу</button>
+          <button type="button" class="section_order_btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- 2 Block -->
-      <section>
+      <section class="block-sizing">
         <div class="section2">
           <h2>Особливості</h2>
           <ul class="section2__list list">
@@ -110,24 +110,33 @@
         </div>
       </section>
       <!-- 3 Block -->
-      <section>
+      <section class="block-sizing">
         <div>
           <h2 class="section3-h2">Чим ми займаємося</h2>
           <ul class="section3-list list">
             <li class="section3-list__items">
               <img src="./images/img1.jpg" alt="Lap top" width="370" height="294" />
+              <div class="section3-list__items__drop">
+                <p class="section3-h3">Десктопні додатки</p>
+              </div>              
             </li>
             <li class="section3-list__items">
               <img src="./images/img2.jpg" alt="Phone" width="370" height="294" />
+              <div class="section3-list__items__drop">
+                <p class="section3-h3">Мобільні додатки</p>
+              </div>
             </li>
             <li class="section3-list__items">
               <img src="./images/img3.jpg" alt="tablet" width="370" height="294" />
+              <div class="section3-list__items__drop">
+                <p class="section3-h3">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <!-- 4 Block -->
-      <section>
+      <section class="block-sizing">
         <div class="section4">
           <h2 class="section4__h2">Наша команда</h2>
           <ul class="section4__list list">
@@ -283,7 +292,7 @@
         </div>
       </section>
       <!-- 5 Block -->
-      <section>
+      <section class="block-sizing">
         <div class="section5-clients">
           <h2 class="section5-clients__h2">Постійні клієнти</h2>
           <ul class="section5-clients__list list">
@@ -322,7 +331,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer block-sizing">
       <div class="footer-container">
       <a class="footer__logo links" href="index.html"><span class="footer__logo-web">Web</span><span class="footer__logo-studio">Studio</span></a>
       <address class="footer__address">
@@ -369,6 +378,17 @@
         </ul>
       </div>
     </footer>
+    <div class="modal-bg modal-bg-hiden" data-modal>
+      <div class="modal-windov">
+        <p class="modal-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatum ab aliquid aperiam ea quaerat quae, distinctio placeat laborum hic.</p>
+        <button type="button" class="modal-button" data-modal-close>        
+          <svg width="18px" height="18px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+        </button>        
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
