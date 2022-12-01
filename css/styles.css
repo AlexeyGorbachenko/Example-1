@@ -83,6 +83,10 @@ img {
 }
 
 .header__navigation > ul > li > a {
+  
+}
+
+.after {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -91,7 +95,6 @@ img {
   color: #212121;
   transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .after::after {
   position: absolute;
   left: 0;
@@ -123,7 +126,7 @@ img {
 }
 
 .active {
-  color: #2196f3;
+  color: #2196F3;
 }
 
 /* ------------------ Contacts --------------- */
