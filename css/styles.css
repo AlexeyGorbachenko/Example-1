@@ -764,9 +764,41 @@ img {
   width: 528px;
   height: 581px;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
   margin: auto;
-  padding: 40px;  
+  flex-direction: column;
+   
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+}
+
+.modal-form__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.modal-form__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 
 .modal-button {
@@ -792,9 +824,10 @@ img {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
-  
+  margin-top: 40px;
+  /* margin-left: 40px; */
+  /* margin-right: 40px; */
 }
 
 .modal-bg-hiden {

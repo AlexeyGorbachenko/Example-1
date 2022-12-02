@@ -393,7 +393,28 @@
     </footer>
     <div class="modal-bg modal-bg-hiden" data-modal>
       <div class="modal-windov">
-        <p class="modal-content">Залиште свої дані, ми вам передзвонимо</p>
+        <h2 class="modal-content">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <div class="modal-form__box">
+            <label for="name" class="form-label">Ім'я</label>
+            <input type="text" class="modal-form__input" name="name" id="name" placeholder="">
+          </div>
+          <div class="modal-form__box">
+            <label for="tel" class="form-label">Телефон</label>
+            <input type="text" class="modal-form__input" name="tel" id="tel"  placeholder="">
+          </div>
+          <div class="modal-form__box">
+            <label for="mail" class="form-label">Пошта</label>
+            <input type="text" class="modal-form__input" name="mail" id="mail"  placeholder="">
+          </div>
+          <div class="modal-form__box">
+            <label for="coment" class="form-label">Коментар</label>
+            <input type="text" class="modal-form__input" name="coment" id="coment"  placeholder="Введіть текст">
+          </div>
+          
+
+        </form>
+        
         <button type="button" class="modal-button" data-modal-close>        
           <svg width="18px" height="18px">
           <use href="./images/icons.svg#icon-close"></use>
